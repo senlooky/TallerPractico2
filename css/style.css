@@ -1,0 +1,40 @@
+body{
+	background-position: center center;
+	background-attachment: fixed;
+	}
+h1{
+	color: goldenrod;
+	font-family: italic ;
+	font-size: 80px;
+	text-align: center;
+	padding: 12px;
+	background-color: white;
+	border: goldenrod;
+
+}
+h2{
+	color: goldenrod;
+	font-family: italic ;
+	text-align: center
+}
+h3{
+	color: goldenrod;
+	font-family: italic ;
+	text-align: center
+}
+.caja2{
+	background-color: white;
+	 border: goldenrod 11px  inset;
+  background: black;
+  padding: 100px;
+  margin: 100px;
+}
+label{
+	color: goldenrod;
+	font-family: italic ;
+}
+form{
+		color: goldenrod;
+	font-family: italic ;
+	background-color: white;
+}

@@ -1,0 +1,101 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu de pollo</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body background="img/food.jpg">
+	<div class="caja2">
+	<h1>Menu de orden</h1>
+</div>
+<center>
+	
+	<script lang="JavaScript">
+	function verificarRB(){
+		if (document.getElementById('SuperCombo').checked) {
+			alert("Super combo seleccionado  $7.25 a pagar!");
+		}
+		if (document.getElementById('ComboPersonal').checked) {
+			alert("Combo personal seleccionado $5.75 a pagar!");
+		}
+		if (document.getElementById('ComboInfatil').checked) {
+			alert("Combo infatil seleccionado! $3.50 a pagar");
+		}
+		if (document.getElementById('radio1').checked) {
+			alert("Una ensalada adiccional de $1.50 fue seleccionada a la orden")
+		}
+		if (document.getElementById('radio2').checked) {
+			alert("Una orden de papas adiccional de $1.50 fue seleccionada a la orden")
+		}
+		if (document.getElementById('radio3').checked) {
+			alert("Una pieza de pollo grande adiccional de $1.75 fue seleccionada a la orden")
+		}
+		if (document.getElementById('radio4').checked) {
+			alert("Una pieza de pollo mediana adiccional de $1.50 fue seleccionada a la orden")
+		}
+		if (document.getElementById('radio5').checked) {
+			alert("Una pieza de pollo pequeña adiccional de $1.25 fue seleccionada a la orden")
+		}
+		if (document.getElementById('radio6').checked) {
+			alert("Una bebida grande adiccional de $1.50 fue seleccionada a la orden")
+		}
+		if (document.getElementById('radio7').checked) {
+			alert("Una bebida mediana adiccional de $1.25 fue seleccionada a la orden")
+		}
+		if (document.getElementById('radio8').checked) {
+			alert("Una bebida pequeña adiccional de $1.00 fue seleccionada a la orden")
+		}
+		if (document.getElementById('radio9').checked) {
+			alert("Un cafe adiccional de $0.50 fue seleccionada a la orden")
+		}
+		if (document.getElementById('radio10').checked) {
+			alert("Un pastel adiccional de $1.25 fue seleccionada a la orden")
+		}
+	}
+
+	</script>
+</div>
+	<form>
+		<h2>Combos</h2>
+		<input type="radio" id="SuperCombo">Super combo 
+
+		<input type="radio" id="ComboPersonal">Combo personal
+
+		<input type="radio" id="ComboInfatil">Combo infatil
+		<br>
+		
+	
+	<h2>Productos</h2>
+	
+		<input type="radio" id="radio1">Ensalada
+		
+		<input type="radio" id="radio2">Papas fritas
+		
+		<input type="radio" id="radio3">Pieza de pollo grande
+		
+		<input type="radio" id="radio4">Pieza de pollo mediana
+		
+		<input type="radio" id="radio5">Pieza de pollo pequeña
+
+		<input type="radio" id="radio6">Bebida grande
+
+		<input type="radio" id="radio7">Bebida mediana
+
+		<input type="radio" id="radio8">Bebida pequeña
+
+		<input type="radio" id="radio9">Café
+
+		<input type="radio" id="radio10">Pastel
+		<br>
+	<h2>Sugerencias</h2>
+	<p><textarea name="comentario" rows="5" cols="50"> </textarea></p>
+	
+		<label>Total a pagar</label>
+		<input type="number" name="Pagar" value="0" min="0.0" max="100">
+
+		<input type="button" value="Total a pagar" onclick="verificarRB()">
+	</form>
+</center>
+</body>
+</html>
